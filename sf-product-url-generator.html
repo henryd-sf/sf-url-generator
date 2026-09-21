@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product URL Generator</title>
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22Product%20URL%20Generator%22%2C%20%22short_name%22%3A%20%22URL%20Gen%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22background_color%22%3A%20%22%23f6f5f3%22%2C%20%22theme_color%22%3A%20%22%231f5e4e%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEJUlEQVR4nO3c0VHcQBBF0cZFHjginAGOjRDIiFD8sS6MYWElPc306%2Bl7/2FF76G1I6q4e3h6DKKj/ci%2BAKodgEgKQCQFIJICEEkBiKQARFIAIikAkRSASApAJAUgkgIQSQGIpABEUgAiKQCRFIBICkAkBSCSAhBJAYikAERSACIpAJEUgEgKQCQFIJICEEkBiKQARFIAIikAkRSASOo%2B%2BwJu9/r8kn0Jmf38/Sv7Er7rzvN/JDZHczVPSXaAoHMzK0lGgKCzPR9DLoDQcyAHRhanMPQcy2FuyRvIYQTVy91DmRsIPaeUO0aLWxiJJRpKA8T6ObeseeYAQs%2BIUqaa8CH6wM/pcF6d3zEQk2dl/bewnm4uVVnSs29h2%2BeCnvlfeyDTUxh6qjQV0MbRoMfhm2zMbgOhp1ZegNBTLi9AbSuqJ2YCqjuj0Y2YzLRpG22gnvevY49VfWZlBKhhCzyUB1BaC%2BgJAGW1hp4AUErL6AkAzW8lPQGgyS2mJwA0s/X0BICmtaSeANCcVtUTAJrQwnoCQKNbW08AaGjL6wkAjauDngDQoJroCQCNqI%2BeANDptdITADq3bnoCQCfWUE8A6Kx66gkAnVJbPQEgvc56AkBizfUEgJTQEwA6HHouAehI6HkLQLtDz/sAtC/0fAhAO0LP5wC0NfRcDUCbQs9XAeh26PkmAN0IPd8HoO9Cz80A9GXo2RKAroeejQHoSujZHoA%2Bhp5dAei/0LM3AP0LPQcC0N/QcywARaBHCEDokeoOCD1irQGhR68vIPScUlNA6DmrjoDQc2LtAKHn3HoBQs/pNQKEnhF1AYSeQbUAhJ5xrQ8IPUNbHBB6RrcyIPRMaFlA6JnTmoDQM60FAaFnZqsBQs/klgKEnvmtAwg9KS0CCD1ZrQAIPYmVB4Se3GoDQk96hQGhx6GqgNBjUklA6PGpHiD0WFUMEHrcqgQIPYaVAYQez2oAQo9tBQChxzl3QOgxzxoQevzzBYSeEpkCQk%2BVHAGhp1B2gNBTKy9A6CmXESD0VMwI0N466znwyzaoeYDOfb8769nStPmU3EDN9fisn6gIqLket6YC0t979GxZPzOnVGkDocfq5nWpDCD0GOqJiLuHp8fJL8nznr3tmtjkWSVsoOYadvX6/OKsJyLuJ7/esTy3N0XWZyCW0IhSppr2IRpD55Y1z8xTGIbOKnGSycd4DOnlzjD/ORCGlNKnlw8oDKZQNIe5JTxI/CrO6ttzoHPJCNAlGN3MR08YAroEo89ZuXnLFND7mmPydPNWAUDknMUpjOoGIJICEEkBiKQARFIAIikAkRSASApAJAUgkgIQSQGIpABEUgAiKQCRFIBICkAkBSCSAhBJAYikAERSACIpAJEUgEgKQCQFIJICEEkBiKQARFIAIikAkRSASApAJPUHugWNdCeFs2wAAAAASUVORK5CYII%3D%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22sizes%22%3A%20%22192x192%22%7D%2C%20%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAMuUlEQVR4nO3d65HdNhaF0faU8vBEZGfgic0hOCOHMj/kasndt%2B%2BDBIFzsNeKgKoC9kfeUkm//PrHb28A5PnP6gcAYA0BAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAob6tfgCO%2BPvPv1Y/Anz03//9vvoReM0vv/7x2%2Bpn4AFzT1OSUJwAFGX02YkS1CQAtdh9ticGdQhAFaafKDJQgQAsZvcJpwQLCcAyph/eycASArCA6YebZGAyAZjK9MN9GjCTAMxj/eFJMjCHAMxg%2BuFVGjCBAFzO%2BsNhMnAp/xjctaw/nOEGXcoXwFUcXBjIp8AVfAFcwvrDWO7UFQRgPCcVruBmDScAgzmjcB33aywBGMnphKu5ZQMJwDDOJczhro0iAGM4kTCTGzeEAAzgLMJ87t15AnCWUwiruH0nCcApzh%2Bs5Q6eIQDHOXlQgZt4mAAAhBKAg7x0QB3u4zECcITTBtW4lQcIwMucM6jJ3XyVAACEEoDXeMWAytzQl3xb/QCdVDtb/osMiqh2NXiS/xHsBRVOudGnrAoX5DvX5EkC8Ky1h9uBprg66/%2BdK/MMPwFV5xxTX7X150m%2BAJ6y5Hybfloou/5u0EP%2BFlBRzi4tlF1/nuEL4LHJR9z000X99Xeb7vMFUIvzShf115%2BHBKAQ608X1n8PAvDAtINu/emi0fo3etQlBKAE608XJnUnAnDPnLNu/emi4/p3fOZpBGAx608XlnQ/AgA8Zv23JABfmnDivf7TQvf17/781xGAZaw/LVjPjQkA8CXrvzcBWMPrP/VZ/%2B0JwG2OPuE2uwKb/XFGEYAFvP5TnLkMIQDAv1j/HAIA/GD9owjAbH7/oazl6%2B92TCYAwNub9Y8kADcsvwkw2fIzP2H9l/8ZCxIASLd8Gb37ryIAUznoVFNt/d2RmQQAclVbfyYTAAhl/REASGT9eRMACGT9%2BU4AIIv1550AQBDrz88EAFJYfz4QAIhg/flMAGB/1p%2BbBAA2Z/35igDAzqw/dwgAbMv6c58AwJ6sPw8JAGzI%2BvMMAYDdWH%2BeJACwFevP8wQA9mH9eYkAwCasP68SANiB9ecAAYD2rD/HCAD0Zv05TACgMevPGQIAXVl/ThIAaMn6c54AQD/WnyEEAJqx/owiANCJ9WcgAYA2rD9jCQD0YP0ZTgCgAevPFQQAqrP%2BXEQAoDTrz3UEAOqy/lxKAKAo68/VBAAqsv5MIABQjvVnDgGAWqw/0wgAFGL9mUkAoArrz2QCACVYf%2BYTAFjP%2BrOEAMBi1p9VBABWsv4sJACwjPVnLQGANaw/ywkALGD9qUAAYDbrTxECAFNZf%2BoQAJjH%2BlOKAMAk1p9qBABmsP4UJABwOetPTQIA17L%2BlCUAcCHrT2UCAFex/hQnAHAJ6099AgDjWX9aEAAYzPrThQDASNafRgQAhrH%2B9CIAMIb1px0BgAGsPx0JAJxl/WlKAOAU609fAgDHWX9aEwA4yPrTnQDAEdafDQgAvMz6swcBgNdYf7YhAPAC689OBACeZf3ZjADAU6w/%2BxEAeMz6syUBgAesP7sSALjH%2BrMxAYAvWX/2JgBwm/VnewIAN1h/EggAfGT9CSEA8C/WnxwCAD9Yf6IIAPzD%2BpNGAODtzfoTSQDA%2BhNKAEhn/YklAESz/iQTAHJZf8IJAKGsPwgAiaw/vAkAgaw/fCcAZLH%2B8E4ACGL94WcCQArrDx8IABGsP3wmAOzP%2BsNNAsDmrD98RQDYmfWHOwSAbVl/uE8A2JP1h4cEgA1Zf3iGALAb6w9PEgC2Yv3heQLAPqw/vEQA2IT1h1cJADuw/nCAANCe9YdjBIDerD8cJgA0Zv3hDAGgK%2BsPJwkALVl/OE8A6Mf6wxACQDPWH0YRADqx/jCQANCG9YexBIAerD8MJwA0YP3hCgJAddYfLiIAlGb94ToCQF3WHy4lABRl/eFqAkBF1h8mEADKsf4whwBQi/WHaQSAQqw/zCQAVGH9YTIBoATrD/MJAOtZf1hCAFjM%2BsMqAsBK1h8WEgCWsf6wlgCwhvWH5QSABaw/VCAAzGb9oQgBYCrrD3UIAPNYfyhFAJjE%2BkM1AsAM1h8KEgAuZ/2hJgHgWtYfyhIALmT9oTIB4CrWH4oTAC5h/aE%2BAWA86w8tCACDWX/oQgAYyfpDIwLAMNYfehEAxrD%2B0I4AMID1h44EgLOsPzQlAJxi/aEvAeA46w%2BtCQAHWX/oTgA4wvrDBgSAl1l/2IMA8BrrD9sQAF5g/WEnAsCzrD9sRgB4ivWH/QgAj1l/2JIA8ID1h10JAPdYf9iYAPAl6w97EwBus/6wPQHgBusPCQSAj6w/hBAA/sX6Qw4B4AfrD1EEgH9Yf0gjALy9WX%2BIJABYfwglAOmsP8QSgGjWH5IJQC7rD%2BEEIJT1BwQgkfUH3gQgkPUHvhOALNYfeCcAQaw/8DMBSGH9gQ8EIIL1Bz4TgP1Zf%2BAmAdic9Qe%2BIgA7s/7AHQKwLesP3CcAe7L%2BwEMCsCHrDzxDAHZj/YEnCcBWrD/wPAHYh/UHXiIAm7D%2BwKsEYAfWHzhAANqz/sAxAtCb9QcOE4DGrD9whgB0Zf2BkwSgJesPnCcA/Vh/YAgBaMb6A6MIQCfWHxhIANqw/sBYAtCD9QeGE4AGrD9wBQGozvoDFxGA0qw/cB0BqMv6A5cSgKKsP3A1AajI%2BgMTCEA51h%2BYQwBqsf7ANAJQiPUHZhKAKqw/MJkAlGD9gfkEYD3rDywhAItZf2AVAVjJ%2BgMLCcAy1h9YSwCmeh996w83Lb8aUQRggeVH3PoDbwJw06X7aP1hCSf/MwHI4g4A7wQgiPWnuOXfx2kEIIX1Bz4QgAjWn/q8/s8nAPuz/uAW3CQAt21zXLb5gwDDCcDOrD9d%2BP1nCQHYlvWnC%2Bu/igB8qfWAtn54GMt1%2BIoAbMhxpxGv/wsJwG6sP41Y/7UEYCvWHz5wKe4QgHt6HZ1eTwte/5cTgE1Yf3qx/hUIwAMthrXFQ8K7aevvatwnAO054vTi3b%2BOb6sfgFOsP41Mnn634yFfAI%2BVPUZlHww%2B8%2BJfkC%2BArqw/XZj%2BsnwBPKXa2lZ7HvjKqvV3R57hC6AfJ5v61r71uyNP8gXwrCJHqshjwFf%2B/vMvv/l08cuvf/y2%2Bhk6KXWyxYAi3Ium/ATUWKlbB7TjJ6DXeLmAytzQlwjAy5wwqMndfJUAAIQSgCO8aEA1buUBAnCQ0wZ1uI/HCADQm/U/TACOc%2ByA1gTgFA2AtdzBMwTgLOcPVnH7ThKAAZxCmM%2B9O08AxnAWYSY3bggBGMaJhDnctVEEYCTnEq7mlg0kAIM5nXAd92ssARjPGYUruFnD%2BQ9hruIf64dRTP9FBOBaMgAnWf/r%2BAnoWs4unOEGXcoXwAy%2BA%2BBVpn8CAZhHBuBJ1n8OAZhNBuAO0z%2BTACygAfCZ6Z9PAJaRAXhn/ZcQgMVkgGR2fy0BqEIJiGL6KxCAWmSAvdn9UgSgKCVgJ3a/JgFoQAzoyOjXJwAtSQIFWfx2BAAglH8MDiCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhPo/eSEY9QJY0wAAAAAASUVORK5CYII%3D%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22sizes%22%3A%20%22512x512%22%7D%5D%7D">
+<style>
+  :root {
+    --bg: #f6f5f3;
+    --panel: #ffffff;
+    --border: #dcd8d1;
+    --text: #23211d;
+    --muted: #6b6660;
+    --accent: #1f5e4e;
+    --accent-soft: #e6f0ec;
+    --error: #a3372a;
+    --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17181a;
+      --panel: #202225;
+      --border: #35373a;
+      --text: #eceae6;
+      --muted: #9a968f;
+      --accent: #4fae8f;
+      --accent-soft: #1c2e28;
+      --error: #e0685a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17181a;
+    --panel: #202225;
+    --border: #35373a;
+    --text: #eceae6;
+    --muted: #9a968f;
+    --accent: #4fae8f;
+    --accent-soft: #1c2e28;
+    --error: #e0685a;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+  main {
+    width: 100%;
+    max-width: 560px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  p.lead {
+    color: var(--muted);
+    margin: 0 0 28px;
+    font-size: 0.95rem;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 22px;
+  }
+  legend {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .option:has(input:checked) {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .option input {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+  }
+  .option label {
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  label.field-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+  }
+  input[type="text"]:focus, .option input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .hint {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 6px;
+    min-height: 1.2em;
+  }
+  .hint.error { color: var(--error); }
+
+  .result {
+    margin-top: 22px;
+  }
+  .result-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: var(--bg);
+  }
+  .result-box a {
+    flex: 1;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    word-break: break-all;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .result-box a:hover {
+    text-decoration: underline;
+  }
+  button.copy {
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  button.copy:hover { border-color: var(--accent); }
+  button.copy.copied { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Product URL generator</h1>
+  <p class="lead">Pick an environment and enter a Product ID to build the self-register link.</p>
+
+  <div class="card">
+    <fieldset>
+      <legend>Environment</legend>
+      <div class="option">
+        <input type="radio" name="env" id="env-dev" value="https://qahe--qahedev.sandbox.my.site.com/s/login/SelfRegister?startURL=%2Fs%2Fproduct%2F">
+        <label for="env-dev">QAHEDEV</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="env" id="env-uat" value="https://qahe--qaheuat.sandbox.my.site.com/s/login/SelfRegister?startURL=%2Fs%2Fproduct%2F">
+        <label for="env-uat">QAHEUAT</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="env" id="env-prod" value="https://apply.qahighereducation.com/s/login/SelfRegister?startURL=%2Fs%2Fproduct%2F">
+        <label for="env-prod">PROD</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <label class="field-label" for="product-id">Salesforce Product ID</label>
+      <input type="text" id="product-id" placeholder="01tXXXXXXXXXXXXXXX" autocomplete="off" spellcheck="false">
+      <div class="hint" id="id-hint">15 or 18 characters, starting with 01t.</div>
+    </div>
+
+    <div class="result" id="result" style="display:none;">
+      <div class="result-box">
+        <a id="url-text" href="#" target="_blank" rel="noopener noreferrer"></a>
+        <button class="copy" id="copy-btn" type="button">Copy</button>
+      </div>
+      <div class="hint">Tip: right-click the link and choose "Open link in incognito window" (or "in private window") if you'd like it to open that way.</div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const envInputs = document.querySelectorAll('input[name="env"]');
+  const idInput = document.getElementById('product-id');
+  const idHint = document.getElementById('id-hint');
+  const resultBox = document.getElementById('result');
+  const urlText = document.getElementById('url-text');
+  const copyBtn = document.getElementById('copy-btn');
+
+  const ID_PATTERN = /^01t([a-zA-Z0-9]{12}|[a-zA-Z0-9]{15})$/;
+
+  function getSelectedHead() {
+    const checked = document.querySelector('input[name="env"]:checked');
+    return checked ? checked.value : null;
+  }
+
+  function update() {
+    const head = getSelectedHead();
+    const id = idInput.value.trim();
+    const valid = ID_PATTERN.test(id);
+
+    if (id.length === 0) {
+      idHint.textContent = '15 or 18 characters, starting with 01t.';
+      idHint.classList.remove('error');
+    } else if (!valid) {
+      idHint.textContent = 'Doesn\'t look like a valid Product ID (expects 01t + 12 or 15 more characters).';
+      idHint.classList.add('error');
+    } else {
+      idHint.textContent = 'Looks good.';
+      idHint.classList.remove('error');
+    }
+
+    if (head && valid) {
+      const fullUrl = head + id;
+      urlText.textContent = fullUrl;
+      urlText.href = fullUrl;
+      resultBox.style.display = 'block';
+      copyBtn.textContent = 'Copy';
+      copyBtn.classList.remove('copied');
+    } else {
+      resultBox.style.display = 'none';
+    }
+  }
+
+  envInputs.forEach(input => input.addEventListener('change', update));
+  idInput.addEventListener('input', update);
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(urlText.textContent);
+      copyBtn.textContent = 'Copied';
+      copyBtn.classList.add('copied');
+      setTimeout(() => { copyBtn.textContent = 'Copy'; copyBtn.classList.remove('copied'); }, 1500);
+    } catch (e) {
+      // Fallback: select the text for manual copy
+      const range = document.createRange();
+      range.selectNodeContents(urlText);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+  });
+
+  update();
+
+  // Resize the window to fit the content. This only takes effect when the
+  // page is running as an installed web app (standalone/PWA window), which
+  // owns its window and is allowed to resize/move it. In a normal browser
+  // tab this is blocked by the browser (a tab doesn't own its window), so
+  // we skip it there rather than attempt something that won't work.
+  window.addEventListener('load', () => {
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.matchMedia('(display-mode: window-controls-overlay)').matches ||
+      window.navigator.standalone === true; // iOS Safari home-screen apps
+
+    if (!isStandalone) return;
+
+    try {
+      const targetWidth = Math.min(640, screen.availWidth);
+      const targetHeight = Math.min(720, screen.availHeight);
+      window.resizeTo(targetWidth, targetHeight);
+    } catch (e) {
+      // Ignore - resizing not permitted in this context.
+    }
+  });
+</script>
+</body>
+</html>
